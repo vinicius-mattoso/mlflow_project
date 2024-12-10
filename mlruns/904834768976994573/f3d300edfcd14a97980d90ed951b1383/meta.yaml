@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/904834768976994573/f3d300edfcd14a97980d90ed951b1383/artifacts
+end_time: 1733795147440
+entry_point_name: ''
+experiment_id: '904834768976994573'
+lifecycle_stage: active
+run_id: f3d300edfcd14a97980d90ed951b1383
+run_name: funny-snake-693
+run_uuid: f3d300edfcd14a97980d90ed951b1383
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733795136982
+status: 3
+tags: []
+user_id: root

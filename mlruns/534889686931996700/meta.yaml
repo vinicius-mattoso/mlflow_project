@@ -1,6 +1,0 @@
-artifact_location: file:///app/mlruns/534889686931996700
-creation_time: 1733793474791
-experiment_id: '534889686931996700'
-last_update_time: 1733793474791
-lifecycle_stage: active
-name: docker-ml-project

@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    volumes:
+      - ./backend/data:/app/data           # Mapeia a pasta 'data' do host para o contêiner
+      - ./backend/models:/app/models       # Mapeia a pasta 'models' do host para o contêiner
+      - ./mlruns:/mlruns                  # Volume compartilhado para MLflow
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow-server:5000  # Definir o URI do MLflow Server
+    depends_on:
+      - mlflow-server
+    networks:
+      - mlflow_network
+    command: python scripts/train_model.py  # Script para rodar o treinamento
+
+  mlflow-server:
+    build:
+      context: .
+      dockerfile: mlflow_server/Dockerfile
+    volumes:
+      - ./mlruns:/mlruns  # Volume compartilhado para MLflow
+    ports:
+      - "5000:5000"  # Expondo a porta 5000 para acessar o MLflow UI
+    networks:
+      - mlflow_network
+
+networks:
+  mlflow_network:
+    driver: bridge

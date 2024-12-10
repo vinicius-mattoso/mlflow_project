@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/904834768976994573
+creation_time: 1733795136909
+experiment_id: '904834768976994573'
+last_update_time: 1733795136909
+lifecycle_stage: active
+name: docker-ml-project
