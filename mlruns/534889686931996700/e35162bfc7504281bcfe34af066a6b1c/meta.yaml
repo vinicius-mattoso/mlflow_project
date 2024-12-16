@@ -1,0 +1,15 @@
+artifact_uri: file:///app/mlruns/534889686931996700/e35162bfc7504281bcfe34af066a6b1c/artifacts
+end_time: 1733793483400
+entry_point_name: ''
+experiment_id: '534889686931996700'
+lifecycle_stage: active
+run_id: e35162bfc7504281bcfe34af066a6b1c
+run_name: likeable-gnat-478
+run_uuid: e35162bfc7504281bcfe34af066a6b1c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733793474861
+status: 3
+tags: []
+user_id: root
